@@ -1,0 +1,73 @@
+        body{
+            
+            background-image:url("../image/background/allNumber.jpg");
+            
+            background-repeat: repeat;
+            
+            
+        }
+         
+         .input{
+    
+             padding-top:3em;
+    
+             padding-left:20em;
+    
+             font-family:impact;
+    
+             font-weight: bold;
+    
+             font-size:120%;
+             
+         }
+         
+         .input2{
+             
+             padding-top:2em;
+    
+             padding-left:20em;
+    
+             font-family:impact;
+    
+             font-weight: bold;
+    
+             font-size:120%;
+             
+         }
+         
+         #select{
+             
+             padding-top:1em;
+             
+             padding-left:1em;
+             
+         }
+         
+         p{
+             
+             padding-top:2em;
+    
+             padding-left:20em;
+    
+             font-family:impact;
+    
+             font-weight: bold;
+    
+             font-size:120%;
+            
+         }
+         
+         #randomTable {
+             
+             padding-top:1em;
+    
+             padding-left:20em;
+             
+             font-family: monospace;
+             
+             font-weight: bold;
+    
+             font-size: 2.0em;
+        }
+            
+            

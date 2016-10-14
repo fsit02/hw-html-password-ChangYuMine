@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta charset="utf-8">
+        
+        <title>密碼產生器說明頁</title>
+        
+        <style>
+        
+         body{
+            
+            background-image:url("image/background/Explanation.jpg");
+            
+            background-repeat: repeat;
+
+        }
+        
+        .story{
+            
+            font-weight: bold;
+            
+            font-size:130%;
+        }
+        
+        a {
+            
+            text-decoration:none;
+        }
+        
+        </style>
+        
+    </head>
+    
+    <body>
+        
+        <p class="story">《前情提要》</p>
+
+        <p>好密碼的條件：<span style="color:red; font-weight: bold;">愈長、愈亂、愈與個人資料無關。</span>問題是，這樣子的密碼會不會就愈記不住？
+
+        <p>於是，小明就想啦－－既然記不住，不如就將密碼寫下來，例如，銀行密碼就寫在提款卡的背面，但是，最重要就是但是：<span style="color:red; font-weight: bold;">不要直接寫</span>。<p>
+
+        <p style="color:red; font-weight: bold;">「不要直接寫」是怎麼回事!!??</p>
+        
+        <p>原來，他參考了<a href="http://ppt.cc/rELO"target="_blank">davidbau.com</a>寫了一支<span style="font-weight: bold;"><a href="welcome.html" target="_blank">亂數產生器</a></span>。</p>
+
+        <p>在這個亂數產生器中，只要輸入任一數字 即可產生亂數表。</P>
+
+        <p>例如輸入"1234"的話，就產生了下列的亂數結果：</p>
+
+        <p>01: 3499305845<br>
+           02: 1769646932<br>
+           03: 3175789704<br>
+           04: 4592818053<br>
+           05: 1597861333<br>
+           06: 4414077977<br>
+           07: 2122376182<br>
+           08: 1169150223<br>
+           09: 6149827002<br>
+           10: 1990694015</p>
+
+        <p>接下來，在提款卡背面寫下:13、31、62、18、32、62、73、43</P>
+
+        <p>他的意思是：密碼源自於亂數表中的結構：</p>
+
+        <p>第一個字元是第一橫列，第三直欄，也就是 9；</p>
+
+        <p>第二個字元是第三橫列，第一直欄，也就是 3；</p>
+
+        <p>(以下類推...)</P>
+        
+        <table border="2" width="30%">
+            
+            <tr align="center"><td>01<td>3<td>4<td><font color="Red">9<td>9<td>3<td>0<td>5<td><font color="Red">8<td>4<td>5</tr>
+            
+            <tr align="center"><td>02<td>1<td>7<td>6<td>9<td>6<td>4<td>6<td>9<td>3<td>2</tr>
+            
+            <tr align="center"><td>03<td><font color="Red">3<td><font color="Red">1<td>7<td>5<td>7<td>8<td>9<td>7<td>0<td>4</tr>
+            
+            <tr align="center"><td>04<td>4<td>5<td><font color="Red">9<td>2<td>8<td>1<td>8<td>0<td>5<td>3</tr>
+            
+            <tr align="center"><td>05<td>1<td>5<td>9<td>7<td>8<td>6<td>1<td>3<td>3<td>3</tr>
+            
+            <tr align="center"><td>06<td>4<td><font color="Red">4<td>1<td>4<td>0<td>7<td>7<td>9<td>7<td>7</tr>
+            
+            <tr align="center"><td>07<td>2<td>1<td><font color="Red">2<td>2<td>3<td>7<td>6<td>1<td>8<td>2</tr>
+            
+            <tr align="center"><td>08<td>1<td>1<td>6<td>9<td>1<td>5<td>0<td>2<td>2<td>3</tr>
+            
+            <tr align="center"><td>09<td>6<td>1<td>4<td>9<td>8<td>2<td>7<td>0<td>0<td>2</tr>
+            
+            <tr align="center"><td>10<td>1<td>9<td>9<td>0<td>6<td>9<td>4<td>0<td>1<td>5</tr>
+        
+        </table>
+
+        <p>那銀行密碼就是：<span style="font-weight: bold;">93481429</span>。</p>
+        
+        <p class="story">《然而，就像唐老大的飆車人生第八集即將上映一樣...》</p>
+        
+        <p>小明心念一轉，似乎對前作還不夠滿意...</p>
+    
+        <img src="image/Lee.jpg">
+        
+        <p>於是乎，他決定在原本的亂數產生器的基礎上，再增加兩種英數混合的功能：<p>
+            
+        <ul>
+            
+            <li><a href="html/wordNumber.html" target="_blank">小寫英文字母&數字混合</a></li>
+            
+            <li><a href="html/bigWordNumber.html" target="_blank">大寫英文字母&數字混合</a></li>
+        
+        </ul>
+        
+        <p>除此之外，每組亂數產生器也可以選擇產生的組數：</p>
+        
+        <img src="image/howNum.jpg">
+        
+        <p><span style="font-weight: bold;">「太好了!!以後就只需記得例如 1234 這組密碼即可。」</span>，看到了有初步的成果，小明不禁歡呼，並決定用<span style="color:Red; font-weight: bold;">雞排和珍奶</span>來暫時結束這一回合...</P>
+        
+    </body>
+    
+</html>

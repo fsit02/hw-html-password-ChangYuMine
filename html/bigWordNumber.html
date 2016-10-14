@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        
+        <meta charset="utf-8">
+            
+        <title>純數字密碼</title>
+        
+        <script src="../js/jquery.js"></script>
+        
+        <script src="../js/seedrandom.js"></script>
+        
+        <link rel="stylesheet" href="../css/number.css">
+        
+    </head>
+    
+    <body>
+        
+        <p id="select"><input type="button" value="返回組合選擇頁" onclick="location.href='../welcome.html'" style="border-radius:10px; font-weight:bold;"></p>
+        
+        <p class="input">請輸入當天的終極密碼：<input type="text" id="txtSeed" value=""></p>
+        
+        <p class="input2">請輸入想要產生的亂數組數：<input type="text" id="inner" value=""></p>
+        
+        <p><input type="button" id="btnGo" value="產生亂數表" style="width:10em; height:40px; border:2px;border-radius:10px; font-weight:bold;"></p>
+        
+        <div id="randomTable">
+        </div>
+        
+<script>
+        
+$("#btnGo").click(function () {
+    
+    var result = "";
+	// 純數字:
+	var sPool = "ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnpqrstuvwxyz0123456789";
+	// 數字+大小寫字母: (去除 I, O, l, o)
+    // var sPool = "ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnpqrstuvwxyz0123456789";
+	
+	var iRow2;
+	
+	iRow2 = new Number(inner.value);
+	
+    Math.seedrandom($("#txtSeed").val()); // 設定亂數種子
+    
+	var iRandom = 0; var ch = "?";
+	
+	for (iRow = 1; iRow <= iRow2; iRow++) {
+		
+		var sLine = (iRow + 100).toString().substr(1, 2) + ": ";
+		
+		for (iCol = 1; iCol <= 10; iCol++) {
+			
+			iRandom = Math.floor(Math.random() * sPool.length);
+			
+			ch = sPool.substr(iRandom, 1);
+			
+			sLine += ch;
+		}
+		result += sLine + "<br>";
+	}
+	$("#randomTable").html(result);
+});
+
+</script>
+        
+    </body>
+
+</html>
